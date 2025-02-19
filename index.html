@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <style>
+      body {
+        background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .quiz-container {
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 20px;
+        padding: 40px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="quiz-container">
+            <h1>Stylish Quiz</h1>
+            <div id="quiz">
+                <div class="question-container">
+                    <h2 id="question-number">Question 1 of 10</h2>
+                    <p id="question"></p>
+                </div>
+                <div id="options" class="options-container"></div>
+                <div class="navigation">
+                    <button id="prev" disabled>Previous</button>
+                    <button id="next">Next</button>
+                </div>
+            </div>
+            <div id="result" class="result-container"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
